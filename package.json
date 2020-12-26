@@ -1,0 +1,23 @@
+{
+  "name": "hh-js-part-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/console1928/hh-js-part-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/console1928/hh-js-part-2/issues"
+  },
+  "homepage": "https://github.com/console1928/hh-js-part-2#readme",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
