@@ -102,12 +102,12 @@ const renderSearchResults = (searchAPIResponse, historyQueries) => {
 };
 
 const addSearchResultsEventListeners = () => {
-    const searchResultsItem = document.querySelectorAll(".search-results__item");
+    const searchResultsItem = document.querySelectorAll(".search-results__item, .search-results__item-history");
 
     if (searchResultsItem) {
         Array.prototype.forEach.call(searchResultsItem, item => {
             item.addEventListener("mousedown", event => {
-                headerInput.value = event.target.innerText;
+                headerInput.value = event.currentTarget.innerText;
                 wrapLocalStorageException(writeQueryToLocalStorage);
                 renderSearchResultsHistory();
             });
